@@ -1,25 +1,18 @@
 const express = require('express')
+const FrontController =require('./controllers/FrontController')
 const app = express()
 const port = 3000
 
+//setup ejs
+app.set('view engine','ejs')
 
 //route
 
-app.get('/', (req, res) => {
-    res.send('Home page')
-  })
+app.get("/",FrontController.home) //[pathselkect karo]
+app.get("/about",FrontController.about)
+app.get("/teams",FrontController.teams)
 
-  app.get('/about', (req, res) => {
-    res.send('About Page')
-  })
 
-  app.get('/contact', (req, res) => {
-    res.send('Contact Page')
-  })
-
-  app.get('/contact1234', (req, res) => {
-    res.send('ye 123 hai bhoi')
-  })
 
 // Server Create
 
