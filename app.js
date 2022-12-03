@@ -6,13 +6,15 @@ const port = 3000
 //setup ejs
 app.set('view engine','ejs')
 
-//route
+//route karta hai pages ko
 
 app.get("/",FrontController.home) //[pathselkect karo]
 app.get("/about",FrontController.about)
 app.get("/teams",FrontController.teams)
 
 
+// static file paths for using css and other..
+app.use(express.static('public'))
 
 // Server Create
 
