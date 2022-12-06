@@ -9,13 +9,20 @@ class FrontController{
             res.render('about')
     }
 
-    static teams =(req,res)=>{
+    static contact =(req,res)=>{
         //res.send("hello home ye hai frontcontroller file ke anadar likha hua")
-        res.render('teams')
-}
+        res.render('contact')
+    }
 
-    
+    static blog =(req,res)=>{
+        //res.send("hello home ye hai frontcontroller file ke anadar likha hua")
+        res.render('blog')
+    }
 
+    static login =(req,res)=>{
+        //res.send("hello home ye hai frontcontroller file ke anadar likha hua")
+        res.render('login')
+    }
 
 }
 

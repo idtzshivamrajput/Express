@@ -10,7 +10,9 @@ app.set('view engine','ejs')
 
 app.get("/",FrontController.home) //[pathselkect karo]
 app.get("/about",FrontController.about)
-app.get("/teams",FrontController.teams)
+app.get("/contact",FrontController.contact)
+app.get("/blog",FrontController.blog)
+app.get("/login",FrontController.login)
 
 
 // static file paths for using css and other..
